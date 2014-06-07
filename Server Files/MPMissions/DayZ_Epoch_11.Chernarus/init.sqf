@@ -28,9 +28,9 @@ MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 14000; // Default = 10000
 dayz_maxLocalZombies = 30; // Default = 30 
 
-//Custom Loadout
-DefaultMagazines = ["ItemBandage","ItemPainkiller","ItemMorphine"];
-DefaultWeapons = ["MeleeMachete","ItemFlashlight"]; 
+//Custom Loadout, Start Items
+DefaultMagazines = ["ItemMap","ItemBandage","ItemBandage","ItemPainkiller","ItemMorphine","ItemWaterbottle","FoodCanBakedBeans"];
+DefaultWeapons = ["MeleeMachete"]; 
 DefaultBackpack = ""; 
 DefaultBackpackWeapon = "";
 
