@@ -89,8 +89,12 @@ if (!isDedicated) then {
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
 	
-	//anti Hack
-	[] execVM "\z\addons\dayz_code\system\antihack.sqf";
+	// Epoch Admin Tools
+[] execVM "admintools\AdminList.sqf";
+if ( !((getPlayerUID player) in AdminList) && !((getPlayerUID player) in ModList) && !((getPlayerUID player) in tempList)) then 
+{
+    [] execVM "\z\addons\dayz_code\system\antihack.sqf";
+};
 
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
@@ -107,3 +111,6 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 //SafeZone
 [] execvm 'Safezone\agn_SafeZoneCommander.sqf';
+
+// Epoch Admin Tools
+[] execVM "admintools\Activate.sqf";
