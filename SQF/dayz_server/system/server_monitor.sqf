@@ -379,6 +379,7 @@ if (isServer && isNil "sm_done") then {
 		endLoadingScreen;
 	};
 
+[] ExecVM "\z\addons\dayz_server\EMS\DZMSInit.sqf";		//Mission EMS
 	allowConnection = true;	
 	sm_done = true;
 	publicVariable "sm_done";

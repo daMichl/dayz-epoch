@@ -15,7 +15,7 @@ while {custom_monitor} do
 	<t size='1'font='Bitstream'align='left'>Bandits Killed:</t><t size='1'font='Bitstream'align='right'>%5</t><br/>
 	<t size='1'font='Bitstream'align='left'>Zombies Killed:</t><t size='1'font='Bitstream'align='right'>%6</t><br/>
 	<t size='1'font='Bitstream'align='left'>Headshots:</t><t size='1'font='Bitstream'align='right'>%7</t><br/>
-	<t size='0.8'font='Bitstream'align='center'>DayZ Chernarus by SkryptJunkie<br/>
+	<t size='0.8'font='Bitstream'align='center'>DayZ Chernarus by ScryptJunkie<br/>
 
 	",dayz_playerName,r_player_blood,round _humanity,_killsH,_killsB,_kills,_headShots];
 sleep 1;

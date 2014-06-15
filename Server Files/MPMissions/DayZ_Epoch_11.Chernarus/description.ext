@@ -148,4 +148,13 @@ class DayZ_loadingScreen
 		};
 	};
 };
-#include "admintools\dialog.hpp"	// Epoch Admin Tools
+class CfgSounds
+{
+	sounds[] = {};
+	class introSong
+	{
+	name="introSong";
+	sound[]={introSong.ogg,0.1,1};
+	titles[] = {};
+	};
+};
