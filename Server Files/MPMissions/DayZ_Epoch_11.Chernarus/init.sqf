@@ -109,3 +109,13 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 //SafeZone
 [] execvm 'Safezone\agn_SafeZoneCommander.sqf';
+
+if (isServer) then {	//Load AI BUS Plugins
+	//Bus Route
+	[true] execVM "busroute\init_bus.sqf";
+};
+
+if (!isDedicated) then {
+	//Bus Route
+	[] execVM "busroute\player_axeBus.sqf";
+};
